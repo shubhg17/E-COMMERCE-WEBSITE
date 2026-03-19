@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* //with this u will get underline only on that route which is active it becomes active when we click on that as navlink provides us and those which are not active we made them hidden in navbar component */
+a.active div {
+   display:block;
+}
