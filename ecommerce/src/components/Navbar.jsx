@@ -78,7 +78,18 @@ function Navbar() {
  {/* // here we will provide the dynamic class name it is that where we use the state variables and whenever the varibale changes then it will change the class name so to use dynamic class name we use first curly braces then back ticks/string interpolation and in this curly brackets with $ we use the ternary operator */}
   <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all         ${visible ? "w-full" : "w-0"}`}></div>
                  {/* //in this div we will add multiple menu links and something to close that menu back at webpage like that */}
-                 
+            <div className="flex flex-col text-gray-600">
+            {/* //ki jabh tum iss div pe click kroge jisme merepe image aur para hain toh voh band hojana chaiye uske liye div pe onClick event use krliya  */}
+                   <div onClick = {()=>setVisible(false)} className="flex items-center gap-4 p-3 cursor-pointer">
+                      <img src={assets.dropdown_icon} className="h-4 rotate-180" />
+                      <p>Back</p>
+                   </div> 
+                   //hum jabh navlink pe click krenge toh side bar menu close hojana chaiye isliye sare navlinks pe onclick lagado
+                   <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/">HOME</NavLink>
+                   <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/collection" >COLLECTION</NavLink>
+                   <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/about">ABOUT</NavLink>
+                   <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/contact">CONTACT</NavLink>
+            </div>                 
        </div>
      </>
    )
