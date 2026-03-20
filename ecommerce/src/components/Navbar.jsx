@@ -1,8 +1,8 @@
 import React from "react"
 //sabse phele import kro apne object ko vahi se images ayengi
 import {assets} from  "../assets/frontend_assets/assets"
-import {NavLink} from "react-router-dom"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"  // this is used when we also need to add active styling 
+import {Link} from "react-router-dom" //this just directly redirects you to the page without styling
 import {useState} from "react"
 function Navbar() {
 
@@ -11,7 +11,7 @@ function Navbar() {
    return (
      <>
        {/* <div className="flex items-center justify-between px-4"> 
-          <img className ="h-2 w-2" src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHkt/dmFsZW50aW5lLXMt/ZGF5LWNvbmdyYXRz/LWNvbmNlcHQtaGFu/ZGRyYXdpbmctc3R5/bGVfNjUzNTI4LTE1/NTIuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MCZxPTgw"/>
+          <img className ="h-2 w-2" src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHktdmFsZW50aW5lLXMtZGF5LWNvbmdyYXRzLWNvbmNlcHQtaGFuZGhyYXdpbmctc3R5bGVfNjUzNTI4LTE1NTIuanBnP3NlbXQ9YWlzX2h5YnJpZCZ3PTc0MCZxPTgw"/>
 
           <div>
              <p>HOME</p>
@@ -21,9 +21,9 @@ function Navbar() {
           </div>
 
           <div>
-             <img className="h-2 " src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHkt/dmFsZW50aW5lLXMt/ZGF5LWNvbmdyYXRz/LWNvbmNlcHQtaGFu/ZGRyYXdpbmctc3R5/bGVfNjUzNTI4LTE1/NTIuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MCZxPTgw"/>
-             <img className="h-2" src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHkt/dmFsZW50aW5lLXMt/ZGF5LWNvbmdyYXRz/LWNvbmNlcHQtaGFu/ZGRyYXdpbmctc3R5/bGVfNjUzNTI4LTE1/NTIuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MCZxPTgw" />
-             <img className="h-2" src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHkt/dmFsZW50aW5lLXMt/ZGF5LWNvbmdyYXRz/LWNvbmNlcHQtaGFu/ZGRyYXdpbmctc3R5/bGVfNjUzNTI4LTE1/NTIuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MCZxPTgw" />
+             <img className="h-2 " src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHktdmFsZW50aW5lLXMtZGF5LWNvbmdyYXRzLWNvbmNlcHQtaGFuZGhyYXdpbmctc3R5bGVfNjUzNTI4LTE1NTIuanBnP3NlbXQ9YWlzX2h5YnJpZCZ3PTc0MCZxPTgw"/>
+             <img className="h-2" src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHktdmFsZW50aW5lLXMtZGF5LWNvbmdyYXRzLWNvbmNlcHQtaGFuZGhyYXdpbmctc3R5bGVfNjUzNTI4LTE1NTIuanBnP3NlbXQ9YWlzX2h5YnJpZCZ3PTc0MCZxPTgw" />
+             <img className="h-2" src="https://imgs.search.brave.com/UUTZxbPiqXwE7dguNc5I5jPO4uTajqa0lrHpCHZfeHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbG92ZS1mb3Jl/dmVyLWVsZWdhbnQt/dGV4dC1kcmF3aW5n/LXNpZ24taGFwcHktdmFsZW50aW5lLXMtZGF5LWNvbmdyYXRzLWNvbmNlcHQtaGFuZGhyYXdpbmctc3R5bGVfNjUzNTI4LTE1NTIuanBnP3NlbXQ9YWlzX2h5YnJpZCZ3PTc0MCZxPTgw" />
           </div>
 
        </div> */}
@@ -76,7 +76,7 @@ function Navbar() {
          {/* //now we are creating sidebar menu for small screens */}
 
  {/* // here we will provide the dynamic class name it is that where we use the state variables and whenever the varibale changes then it will change the class name so to use dynamic class name we use first curly braces then back ticks/string interpolation and in this curly brackets with $ we use the ternary operator */}
-  <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all         ${visible ? "w-full" : "w-0"}`}></div>
+  <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all duration-300 ${visible ? "w-full" : "w-0"}`}>
                  {/* //in this div we will add multiple menu links and something to close that menu back at webpage like that */}
             <div className="flex flex-col text-gray-600">
             {/* //ki jabh tum iss div pe click kroge jisme merepe image aur para hain toh voh band hojana chaiye uske liye div pe onClick event use krliya  */}
@@ -84,12 +84,13 @@ function Navbar() {
                       <img src={assets.dropdown_icon} className="h-4 rotate-180" />
                       <p>Back</p>
                    </div> 
-                   //hum jabh navlink pe click krenge toh side bar menu close hojana chaiye isliye sare navlinks pe onclick lagado
+                   {/* //hum jabh navlink pe click krenge toh side bar menu close hojana chaiye isliye sare navlinks pe onclick lagado */}
                    <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/">HOME</NavLink>
                    <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/collection" >COLLECTION</NavLink>
                    <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/about">ABOUT</NavLink>
                    <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/contact">CONTACT</NavLink>
             </div>                 
+       </div>
        </div>
      </>
    )
