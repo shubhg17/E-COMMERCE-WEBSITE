@@ -6,3 +6,7 @@
 a.active div {
    display:block;
 }
+
+* {
+    font-family:Arial,Roboto;
+}
