@@ -7,7 +7,7 @@ export const ShopContext = createContext()
 
 const ShopContextProvider = (props)=> {
  
-  //we are using this variable so to change the currency of entire webpage u can also other currency also which would be use for entire website for each product 
+  //we are using this variable so to change the currency of entire webpage u can also use other currency also which would be use for entire website for each product 
      const currency = "$"
      const delivery_fee = 10;
   // after this we will create a component named latestcollection and in that one we will display the latest added products 

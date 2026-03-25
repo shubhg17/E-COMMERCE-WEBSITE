@@ -1,6 +1,6 @@
 import React from "react"
 
-//in title we will display 2 texts and we will get those 2 texts using the props 
+//in Title we will display 2 texts and we will get those 2 texts using the props 
 const Title = ({text1 , text2})=> {
    return (
      <>

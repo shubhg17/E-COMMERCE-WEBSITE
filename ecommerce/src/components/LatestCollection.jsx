@@ -17,10 +17,10 @@ function LatestCollection() {
       //with this in our latestProducts state we will get 10 products 
        setlatestProducts(products.slice(0,10))
     } , [])
-    //here dependencyarray  for this useeffect hook would be an empty array so that this function will be executed once when the component gets loaded 
+    //here dependencyarray  for this useEffect hook would be an empty array so that this function will be executed once when the component gets loaded 
 
     //to check if we are getting data of all the products so we can check like this 
-    console.log(products)
+   //  console.log(products)
 
    return (
       <>
@@ -32,7 +32,7 @@ function LatestCollection() {
 
            {/* // after this div here we will be adding our logic so that in this latestcollection section we can display the recently added 10 products for that first we need to get  the 10 products from products data for that we will store the 10 products from this product array in one state variable  */}
 
-           //now we will display our productlist so to do that first we create productitem and then we will map that using our array so we will create another component 
+           {/* //now we will display our productlist so to do that first we create productitem and then we will map that using our array so we will create another component named productitem.jsx */}
 
         </div>
 

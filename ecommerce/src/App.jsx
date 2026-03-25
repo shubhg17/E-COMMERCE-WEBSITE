@@ -8,7 +8,7 @@ import Contact from "./pages/Contact.jsx"
 import Product from "./pages/Product.jsx"
 import Cart from "./pages/Cart.jsx"
 import Login from"./pages/Login.jsx"
-import PlaceOrder from"./pages/PlaceOrder.jsx"
+import PlaceOrder from  "./pages/PlaceOrder.jsx"
 import Orders from "./pages/Orders.jsx"
 import Navbar from "./components/Navbar.jsx"
 
